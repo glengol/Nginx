@@ -47,4 +47,8 @@ variable "cidr_block" {
   description = "The CIDR block for the VPC."
   default     = "10.0.0.0/16"
 }
-#
+
+variable "s3-bucket-name" {
+  description = "The name of the S3 bucket."
+  default     = "my-terraform-state-bucket-nginx"
+}
