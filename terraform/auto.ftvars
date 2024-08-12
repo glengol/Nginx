@@ -1,0 +1,6 @@
+aws_region            = "eu-central-1"
+bastion_ami           = ""
+custom_ami            = ""
+nginx_instance_name   = "nginx"
+bastion_instance_name = "bastion"
+#
