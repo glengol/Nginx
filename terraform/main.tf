@@ -1,3 +1,18 @@
+terraform {
+  backend "s3" {
+    bucket = var.s3_bucket_name
+    region = var.aws_region
+    key = "nginx-infrastructure/terraform.tfstate"
+  }
+
+  required_providers {
+    aws = {
+      source  = "hashicorp/aws"
+      version = ">= 5.30.0"
+    }
+  }
+}
+
 provider "aws" {
   region = var.aws_region
 }
