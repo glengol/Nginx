@@ -31,7 +31,9 @@ jobs:
       
       - name: Terraform init
         run: terraform init -backend-config="bucket=${{ env.BUCKET_TF_STATE }}" -backend-config="region=eu-central-1" -backend-config="key=terraform-state"
-      
+     
+      - name: show dir
+        run: ls
       - name: Enter to terraform dir
         run: cd .\terraform\
       - name: Terraform Apply
