@@ -3,4 +3,4 @@ bastion_ami           = ""
 custom_ami            = ""
 nginx_instance_name   = "nginx"
 bastion_instance_name = "bastion"
-#
+s3-bucket-name        = "my-terraform-state-bucket-nginx"
